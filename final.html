@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>FINAL PROJECT</title>
+    <style>
+        .checkbox{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+        <form action="#" id="main-form">
+                Task:<br>
+                <input type="text" id="task" value=""><br>
+                Deadline:<br>
+                <input type="date" id="deadline" value=""><br>
+                <input type="submit" value="Submit" onclick= save()>
+        </form>
+        
+        <table style="width:100%">
+            <tbody id="tabTask">
+                <tr>
+                    <th width ="10%" >√</th> 
+                    <th width ="60%">Task</th>
+                    <th width ="15%">Input Date</th>
+                    <th width ="15%">Deadline</th>
+                </tr>
+                <tr class = "baris">
+                  <td class="checkbox"><input type= "checkbox" name="task" value="done" class ="todo"></td>
+                  <td>Mandiin Carly</td>
+                  <td>10/10/2018</td>
+                  <td>31/10/2018</td>
+                </tr>
+            </tbody>        
+        </table>
+            <input type="submit" value="Refresh" onclick= refresh()>
+
+    <script src="script-main.js"></script>
+  </body>
+</html>
